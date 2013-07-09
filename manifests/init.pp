@@ -1,4 +1,4 @@
-class curvature($keystone_ip, $keystone_port) {
+class curvature($keystone_ip = "${ipaddress}", $keystone_port = '5000') {
   package { "git":
     ensure => "installed",
   }
