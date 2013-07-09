@@ -1,0 +1,16 @@
+defaults: &defaults
+  keystone:
+    ip: <%= @keystone_ip %>
+    port: <%= @keystone_port %>
+  services:
+    ip:
+    port:
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
